@@ -7,6 +7,12 @@
 // #include "includes/splay.h"
 
 /*
+Neste código foram trabalhados 5 tipos de arvores binarias.
+Para compilar basta 'descomentar' o include e o trecho desejado na função main, e executar os comandos sitados abaixo.
+(Para ver detalhes das implementações confira na pasta 'includes')
+*/
+
+/*
 Para compilar:
 
 gcc -Wall -Werror -c INCLUDE_X.c    (cd includes)
