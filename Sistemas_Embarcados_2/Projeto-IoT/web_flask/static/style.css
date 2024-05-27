@@ -1,0 +1,104 @@
+body,
+html {
+	background-color: #002060;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	color: #fff;
+	/*padding: 2%;*/
+}
+
+#mostrador {
+	padding: 2%;
+	height: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#esquerda {
+	height: 100%;
+	display: flex;
+	flex: 0.57;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#direita {
+	padding-left: 30px;
+	height: 100%;
+	flex: 0.4;
+	overflow: auto;
+}
+
+.cartao {
+	box-shadow: inset 0px -3em 3em rgba(0, 0, 0, 0.1),
+		0px 0em 2px rgba(255, 255, 255, 1),
+		0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+	background-color: #4472C4;
+	border-radius: 3px;
+}
+
+#time {
+	padding: 10px;
+	padding-left: 20px;
+	flex: 0.47;
+}
+
+#temp {
+	padding: 10px;
+	padding-left: 20px;
+	flex: 0.47;
+}
+
+#informacao {
+	padding-top: 40px;
+	display: flex;
+	width: 100%;
+	/*height: 80%;*/
+	justify-content: space-around;
+}
+
+#informacao>div {
+	flex: 0.3;
+	align-items: center;
+	text-align: center;
+	background-color: #481F67;
+	border-radius: 10px;
+	font-size: 20px;
+	color: #fff;
+}
+
+#resultados {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+
+.result {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.result>span {
+	margin-bottom: 10px;
+}
+
+#chartdiv {
+	width: 100%;
+	height: 300px;
+}
+
+#informe {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fa-fan {
+	cursor: pointer;
+	font-size: 30px;
+	padding-right: 10px;
+}

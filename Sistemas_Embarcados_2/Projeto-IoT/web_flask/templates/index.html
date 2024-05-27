@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Controle Planta</title>
+	<!--CSS-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+	<!-- GRAFICO -->
+	<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+	<!-- ICONES -->
+	<script src="https://kit.fontawesome.com/0a1b1f14bc.js" crossorigin="anonymous"></script>
+
+	<!-- Incluir Firebase (SDK) -->
+	<!--<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>    -->
+	<!-- <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js"></script> -->
+	<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-database-compat.js"></script>
+
+
+
+
+	<!--JAVASCRIPT-->
+	<script src="{{ url_for('static', filename='bd_firebase.js') }}"></script>
+	<script src="{{ url_for('static', filename='grafico.js') }}"></script>
+	<script src="{{ url_for('static', filename='acao.js') }}"></script>
+
+
+
+</head>
+
+<body>
+	<div id="mostrador">
+
+		<div id="esquerda">
+			<div id="temp" class="cartao">
+				<div id="informe">
+					<h1>TEMPERATURA</h1>
+					<i class="fa-solid fa-fan" onclick="enviarComando('ligar')" id="vent"></i>
+				</div>
+				<div id="chartdiv"></div>
+			</div>
+
+			<div id="time" class="cartao">
+				<h1>TEMPO REAL</h1>
+
+				<div id="informacao">
+					<div>
+						<span>Temperatura</span>
+						<h2 id="lida">13°</h2>
+					</div>
+
+					<div>
+						<span>Set Point</span>
+						<h2 id="desejada">40°</h2>
+					</div>
+
+					<div>
+						<span>DutyCicle</span>
+						<h2 id="duty">40%</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="direita" class="cartao">
+			<h1>Historico</h1>
+
+			<div id="resultados">
+				<div id="horarios" class="result">
+					<span>Horario</span>
+				</div>
+
+				<div id="Ventilador" class="result">
+					<span>Ventilador</span>
+				</div>
+
+				<div id="Temperatura" class="result">
+					<span>Temperatura</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
