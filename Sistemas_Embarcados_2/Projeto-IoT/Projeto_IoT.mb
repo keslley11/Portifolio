@@ -1,0 +1,6 @@
+Projeto IoT - Controle de Temperatura e Supervisório Web
+
+Foi desenvolvido neste projeto um sistema de controle  PI de temperatura para uma câmara 
+com uma resistência para aquecimento onde o resfriamento é controlado por um microcontrolador (ESP32) 
+que aciona um cooler de acordo com a modelagem feita e transmite os dados via socket para um servidor 
+web (flask, html, css e js) conectado a um banco de dados (firebase).
