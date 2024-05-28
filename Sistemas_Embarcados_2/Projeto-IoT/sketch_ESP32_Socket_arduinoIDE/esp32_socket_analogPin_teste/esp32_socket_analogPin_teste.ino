@@ -13,14 +13,14 @@
 //#include <WiFi.h>
 
 //Parâmetros do Wifi
-/* (wifi) --> atualizar IP no script index.html (acoes.js)
+// --> coloque os parametros do wifi;
+// --> inicie a esp32 com este código e pegue o IP mostrado na serial
+// --> atualize o IP no script index.html (acoes.js) para conectar o socket
+/* 
 const char* ssid = "..." ;
 const char* password = "...";
 */
-/* (wifi casa 1)
-const char* ssid = "PINGO" ;
-const char* password = "palio6635";
-*/
+
 ///* (wifi lab - domotica)
 const char* ssid = "Domotica" ;
 const char* password = "domotica1c203a";
@@ -83,9 +83,8 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
     
     Serial.println("Conectado ao WiFi");
     Serial.print("Endereço IP: ");
-    Serial.println(WiFi.localIP()); // --> 'ws://192.168.100.10:81/' (wifi casa 1)
-                                    // --> 'ws://192.168.0.106:81/' (wifi lab - domotica)
-                                    // --> 'ws://192.168.100.10:81/' (wifi casa 2)
+    Serial.println(WiFi.localIP()); // --> 'ws://192.168.0.106:81/' (wifi lab - domotica)
+                                    
 
     //Configuração dos servidores
     webSocket.begin();
