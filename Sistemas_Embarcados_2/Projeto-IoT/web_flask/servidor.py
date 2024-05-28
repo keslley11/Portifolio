@@ -3,9 +3,6 @@ import datetime
 
 app = Flask(__name__)
 
-# dados = [
-#     {'temp':0,'datetime': datetime.datetime.now()}
-# ]
 
 @app.route('/')
 def index():
