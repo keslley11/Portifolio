@@ -1,0 +1,8 @@
+===================
+Blockchain
+
+é uma estrutura de dados criada para garantir a segurança das transações de bitcoins usando 'hash'. Para isso é feita a validação da chave privada, validação da própria Blockchain, e a mineração para celar os dados da transação e dificultar fraudes. 
+
+Acredito que Solidity seria a linguagem mais ideal para trabalhar nesta área, mas aqui busco apenas aprender como funciona e implementar algo relativamente simples. Ainda tenho muito oque aprender e explorar sobre o assunto para completar este projeto.
+
+Em breve subirei novos commits!

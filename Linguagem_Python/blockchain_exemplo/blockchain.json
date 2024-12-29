@@ -1,0 +1,27 @@
+{
+    "chain": [
+        {
+            "index": 0,
+            "timestamp": 1735488391.856469,
+            "data": "Genesis Block",
+            "previous_hash": "0",
+            "nonce": 0,
+            "hash": "c8e65899f6c29e77c79c90e1989855dff95b9a535757bb31ab39d9b36b8a562b"
+        },
+        {
+            "index": 1,
+            "timestamp": 1735488391.8754706,
+            "data": [
+                {
+                    "sender": "b0652998884de3d11f309a6ec0979de2d45eb713973600b8c52d1574663aebd0b5481e1f8473859cd9aabc246a74e593cf22c9c0286dec8064bf69bfd6538d12",
+                    "receiver": "3c8ddadd82eb161dfcbae3adc5a36e71423b66c846a1c423ead2b711e0bd5ee44fe549b723c0b83a8fa3fe9a4110965e94c0bff91baef6426fd865310dd96b9f",
+                    "amount": 50,
+                    "signature": "17a7b4a2fc6f5232cfe5d28e107a451877b8ce74448b9ba99ad5b215a6094f63ecfc2a35937003374fc55d39e8cc3e62287bcd4e5ae72094cb9bb2ec3745192f"
+                }
+            ],
+            "previous_hash": "c8e65899f6c29e77c79c90e1989855dff95b9a535757bb31ab39d9b36b8a562b",
+            "nonce": 218651,
+            "hash": "000045cdf6845b6ba7e88bc53ed401e45c3d1556102a0461176b5777022ed273"
+        }
+    ]
+}
