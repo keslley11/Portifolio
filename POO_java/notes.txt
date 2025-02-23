@@ -1,0 +1,13 @@
+-Instalar JDK , variavies de ambiente
+
+-Conferir versões
+	>> java --version
+	>> javac --version
+	>> javadoc --version
+
+-Compilar file.java
+	>> javac file.java
+	(VS Code: os arquivos .class serão gerados com este comando)
+	
+-Executar file
+	>> java file
