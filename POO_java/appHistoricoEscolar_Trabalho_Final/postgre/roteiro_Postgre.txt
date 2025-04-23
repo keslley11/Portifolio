@@ -1,0 +1,6 @@
+-instalação
+-login
+
+-Botão direito em "Databases" --> create (FaculdadeDB)
+-Botão direito em "FaculdadeDB"--> Query Tool
+-abrir/colar código sql "tables_FaculdadeDB"

@@ -1,0 +1,35 @@
+Modelagem DB: https://miro.com/app/board/uXjVMuEVzPc=/
+
+Restrições Crud:
+(primary key automatica)
+
+-Alunos [ok]
+	Create: -
+	Read: 	-
+	Update: -
+	Delete: deletar registros relacionados em "matriculas" (cascade)
+-Cursos [ok]
+	Create: -
+	Read:	-
+	Update: -
+	Delete: deletar registros relacionados em "Cursos_requisitos" (cascade)
+-Professores [ok]
+	Create: -
+	Read:	-
+	Update: -
+	Delete: limpar campo dos registros relacionados em "Turmas" (não deletar,pode ser null)
+-Cursos_requisitos [ok]
+	Create: cursos existentes; cursoID!=cursoReq ; não repetir requisito
+	Read:   -
+	Update: -
+	Delete: -
+-Turma [ok]
+	Create: cursos existentes; professores existentes(pode ser null)
+	Read:	-
+	Update: professor existente; bloquear update campo "curso"
+	Delete: deletar registros relacionados em "Matriculas"
+-Matricula [ok]
+	Create: turma e aluno existente; verificar cursosRequisitos (opcional)
+	Read:	-
+	Update: turma e aluno existente; verificar cursosRequisitos (opcional)
+	Delete: -

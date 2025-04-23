@@ -25,7 +25,7 @@ class Pessoa {
     
    }
 
-public class Main { 
+public class CadastroPessoas { 
         
     // Function to add x in arr
     public static Pessoa[] addX(int n, Pessoa arr[], Pessoa x)
