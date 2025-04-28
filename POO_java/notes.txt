@@ -1,4 +1,4 @@
--Instalar JDK , variavies de ambiente
+-Instalar JDK , variaveis de ambiente
 
 -Conferir versões
 	>> java --version
