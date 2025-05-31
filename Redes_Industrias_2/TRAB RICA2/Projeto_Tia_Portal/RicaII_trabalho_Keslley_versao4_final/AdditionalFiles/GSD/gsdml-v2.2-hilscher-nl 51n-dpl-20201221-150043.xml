@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ISO15745Profile xmlns="http://www.profibus.com/GSDML/2003/11/DeviceProfile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\XSD\GSDML-DeviceProfile-V2.2.xsd">
+	
+	<ProfileHeader>
+		<ProfileIdentification>PROFINET Device Profile</ProfileIdentification>
+		<ProfileRevision>1.00</ProfileRevision>
+		<ProfileName>Device Profile for PROFINET Devices</ProfileName>
+		<ProfileSource>PROFIBUS Nutzerorganisation e. V. (PNO)</ProfileSource>
+		<ProfileClassID>Device</ProfileClassID>
+		<ISO15745Reference>
+			<ISO15745Part>4</ISO15745Part>
+			<ISO15745Edition>1</ISO15745Edition>
+			<ProfileTechnology>GSDML</ProfileTechnology>
+		</ISO15745Reference>
+	</ProfileHeader>
+	<ProfileBody>
+		<DeviceIdentity VendorID="0x011E" DeviceID="0x0110">
+			<InfoText TextId="IDT_FamilyDescription"/>
+			<VendorName Value="Hilscher GmbH"/>
+		</DeviceIdentity>
+		<DeviceFunction>
+			<Family MainFamily="Gateway" ProductFamily="NL51NDPL"/>
+		</DeviceFunction>
+		<ApplicationProcess>
+			<DeviceAccessPointList>
+				<DeviceAccessPointItem ID="DIM 1" PhysicalSlots="0 1 76" ModuleIdentNumber="0x02000000" MinDeviceInterval="64" DNS_CompatibleName="nl51ndpl" FixedInSlots="0" ObjectUUID_LocalIndex="1" ImplementationType="netX" AddressAssignment="DCP;LOCAL" NameOfStationNotTransferable="true" MultipleWriteSupported="true">
+					<ModuleInfo>
+						<Name TextId="IDT_MODULE_NAME_DAP1"/>
+						<InfoText TextId="IDT_INFO_DAP1"/>
+						<VendorName Value="Hilscher GmbH"/>
+						<OrderNumber Value="NL 51N-DPL"/>
+					</ModuleInfo>
+					<SubslotList>
+						<SubslotItem SubslotNumber="32768" TextId="Interface1"/>
+						<SubslotItem SubslotNumber="32769" TextId="Interface1Port1"/>
+					</SubslotList>
+					<IOConfigData MaxInputLength="1024" MaxOutputLength="1024"/>
+					<UseableModules>
+						<ModuleItemRef ModuleItemTarget="IDM_1" FixedInSlots="1"/>
+						<ModuleItemRef ModuleItemTarget="IDM_76" FixedInSlots="76"/>
+					</UseableModules>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDDS_1_1" SubmoduleIdentNumber="0x1" Writeable_IM_Records="1 2 3 4">
+							<IOData IOPS_Length="1" IOCS_Length="1"/>
+							<ModuleInfo>
+								<Name TextId="IDT_SUBMODULE_NAME_Module0_0"/>
+								<InfoText TextId="IDT_INFO_SubModule0_0"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+					<SystemDefinedSubmoduleList>
+						<InterfaceSubmoduleItem SupportedRT_Classes="RT_CLASS_1;RT_CLASS_2" SupportedProtocols="SNMP;LLDP" SupportedMibs="MIB2" TextId="Interface1" SubslotNumber="32768" SubmoduleIdentNumber="0x00000002">
+							<SynchronisationMode MaxLocalJitter="50"/>
+							<ApplicationRelations>
+								<TimingProperties SendClock="32 64 128" ReductionRatio="1 2 4 8 16 32 64 128 256 512"/>
+								<RT_Class3TimingProperties SendClock="32 64 128" ReductionRatio="1 2 4 8 16"/>
+							</ApplicationRelations>
+						</InterfaceSubmoduleItem>
+						<PortSubmoduleItem SubslotNumber="32769" MAUType="100BASETXFD" TextId="Interface1Port1" SubmoduleIdentNumber="0x00000003" LinkStateDiagnosisCapability="Up+Down" MaxPortTxDelay="72" MaxPortRxDelay="320"/>
+					</SystemDefinedSubmoduleList>
+				</DeviceAccessPointItem>
+			</DeviceAccessPointList>
+			<ModuleList>
+				<ModuleItem ID="IDM_1" ModuleIdentNumber="0x3000000">
+					<ModuleInfo>
+						<Name TextId="IDT_MODULE_NAME_Module1"/>
+						<InfoText TextId="IDT_INFO_Module1"/>
+						<VendorName Value="Hilscher GmbH"/>
+						<OrderNumber Value="MasterOrderNumber"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_1_1" SubmoduleIdentNumber="0x1">
+							<IOData/>
+							<ModuleInfo>
+								<Name TextId="IDT_SUBMODULE_NAME_Module0_1"/>
+								<InfoText TextId="IDT_INFO_SubModule0_1"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				<ModuleItem ID="IDM_76" ModuleIdentNumber="0x40004ef">
+					<ModuleInfo>
+						<Name TextId="IDM_MODULE_NAME_Module76"/>
+						<InfoText TextId="IDT_INFO_Module76"/>
+						<VendorName Value="Allen Bradley"/>
+						<OrderNumber Value="SlaveOrderNumber"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_76_1" SubmoduleIdentNumber="0x1" FixedInSubslots="1">
+							<IOData>
+								<Input>
+									<DataItem DataType="Unsigned16" TextId="IDT_SUBMODULE_NAME_Module76_1_SIGNAL_1"/>
+									<DataItem DataType="Unsigned16" TextId="IDT_SUBMODULE_NAME_Module76_1_SIGNAL_2"/>
+									<DataItem DataType="Unsigned16" TextId="IDT_SUBMODULE_NAME_Module76_1_SIGNAL_3"/>
+								</Input>
+							</IOData>
+							<ModuleInfo>
+								<Name TextId="IDT_SUBMODULE_NAME_Module76_1"/>
+								<InfoText TextId="IDT_INFO_SubModule76_1"/>
+								<VendorName Value="Allen Bradley"/>
+								<OrderNumber Value="ModuleOrderNumber"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+			</ModuleList>
+			<ExternalTextList>
+				<PrimaryLanguage>
+					<Text TextId="IDT_FamilyDescription" Value="PROFINET IO/PROFIBUS-DP Proxy device"/>
+					<Text TextId="IDT_MODULE_NAME_DAP1" Value="NL 51N-DPL"/>
+					<Text TextId="IDT_INFO_DAP1" Value="NL 51N-DPL"/>
+					<Text TextId="Interface1" Value="Interface 1"/>
+					<Text TextId="Interface1Port1" Value="Interface 1 - Port1"/>
+					<Text TextId="IDT_MODULE_NAME_Module1" Value="NL51N (PROFIBUS-DP)"/>
+					<Text TextId="IDT_INFO_Module1" Value="Profibus master"/>
+					<Text TextId="IDT_SUBMODULE_NAME_Module0_1" Value="Empty module"/>
+					<Text TextId="IDT_INFO_SubModule0_1" Value="Empty module"/>
+					<Text TextId="IDT_SUBMODULE_NAME_Module0_0" Value="Useable Module"/>
+					<Text TextId="IDT_INFO_SubModule0_0" Value="Useable Module"/>
+					<Text TextId="IDM_MODULE_NAME_Module76" Value="1734-APB"/>
+					<Text TextId="IDT_INFO_Module76" Value="Profibus slave"/>
+					<Text TextId="IDT_SUBMODULE_NAME_Module76_1_SIGNAL_1" Value="Input_1"/>
+					<Text TextId="IDT_SUBMODULE_NAME_Module76_1_SIGNAL_2" Value="Input_2"/>
+					<Text TextId="IDT_SUBMODULE_NAME_Module76_1_SIGNAL_3" Value="Input_3"/>
+					<Text TextId="IDT_SUBMODULE_NAME_Module76_1" Value="1734-IR2 "/>
+					<Text TextId="IDT_INFO_SubModule76_1" Value="IO-Profibus module"/>
+				</PrimaryLanguage>
+			</ExternalTextList>
+		</ApplicationProcess>
+	</ProfileBody>
+</ISO15745Profile>

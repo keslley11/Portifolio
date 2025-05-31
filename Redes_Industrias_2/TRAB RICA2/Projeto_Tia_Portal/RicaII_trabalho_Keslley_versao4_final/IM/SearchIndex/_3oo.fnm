@@ -1,0 +1,13 @@
+þÿÿÿš###id###VisulizationRootBrowsableId###TargetIdNameDisplayName-###SearchableNonTechnicalFieldNamesOfDocument###ParentIds###ImmediateParentId###ReferenceFieldIds###ReconstitutionDataIDAssociatedCultureFieldIdAssociatedProjectVersion!AssociatedIndexDataVersionFieldId,AssociatedTechnicalFieldNamesHashCodeFieldId-AssociatedTechnicalFieldContentVersionFieldIdIndexAtomStoreCommentDatatypeValue###SearchFilterIdsTitleLanguageVersionConstant nameEvent class###UpdatableParentIdInterfaceMember_NameInterfaceMember_DatatypeInterfaceMember_ValueInterfaceMember_CommentNetwork titleLADFBD CodeAddressAuthorFamilyUser-defined IDInstance DBAcknowledgementModelIdAcknowledgedText
+ComingText	GoingTextCommonAlarmClassAcknowledgementGroupTextInvalidAttempts	ValidDaysWarningDaysGenerationsMinNumPsswdStationNamePartnerNameNodeName	CycleUnit	CycleTimeNumber	ShortName
+LogoutTime	BackColor	GridColorAlarmSourceCaptionColumnTextAckGroupColumnTextAlarmStateColumnTextAlarmTextColumnTextClassNameColumnTextDateColumnTextDeviceColumnTextDiagnosableColumnTextNumberColumnTextTimeSortByTimeDirectionTableBackColor	TableFontTableForeColor	Functions	EdgeStyle
+FocusColorFont	ForeColorHorizontalAlignmentLayerMode	PictureOnTextOffTextOnVerticalAlignmentTemplateBackFillStyleBorderColorFlashingTextTagAddressPanelInfoAcquisitionTriggerModeAcquisitionCycleDataTypeCodingPlcNameControllerTagLimitHighConstantLimitLowConstant	JobNumber
+StartValueUITypeEditorBitPositionUITypeEditorTagExpressionRangeFromToAboveUpperLimitColorBelowLowerLimitColor
+DataFormatFormatPatternUnitPropertyNameTagValueForPropertyTagPageAlarmLowerLimitColorAlarmUpperLimitColorBarBackColorBarEdgeStyleBarOrientation
+ScaleColorScalePositionSegmentColoring
+RulerColorTableGridlineColorTableHeaderBackColorTableHeaderFontTableHeaderForeColorTimeAxisModeTimeAxisSideAddressAccessMode
+ConnectionProcessValueAcknowledgementBitAddress
+AlarmClassPlcAcknowledgementBitAddressTriggerBitAddress
+TriggerTagDelayTimeUnitHysteresisMode	LimitMode
+LimitValue	AlarmTextTextListSCL CodeNetwork commentNameInFunctionalViewNameInDBFullNameInDBAdaptPicturePictureColorEndStyle	FillStyleLineEndShapeStyle
+StartStyleStyle
